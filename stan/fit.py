@@ -108,7 +108,7 @@ class Fit:
             raise RuntimeError("Still collecting draws for fit.")
         return key in self.param_names
 
-    def to_frame(self):
+    def to_frame(self) -> pd.DataFrame:
         """Return view of draws as a pandas DataFrame.
 
         If pandas is not installed, a `RuntimeError` will be raised.
